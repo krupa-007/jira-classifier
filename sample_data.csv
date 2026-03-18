@@ -1,0 +1,31 @@
+summary,description,category
+Fix login button not responding,Users report that the login button becomes unresponsive after a failed authentication attempt. The issue is reproducible on Chrome and Firefox.,Bug
+Add dark mode support,As a user I want to toggle between light and dark themes so that I can use the application comfortably in low-light environments.,Feature
+Update README with setup instructions,The onboarding documentation is outdated and missing steps for configuring the local development environment.,Task
+Increase unit test coverage for auth module,Current test coverage for the authentication module is below 60%. Improve it to at least 80% by adding missing unit tests.,Task
+Dashboard page crashes on empty dataset,When there is no data the dashboard throws an uncaught TypeError: Cannot read properties of undefined.,Bug
+Integrate Slack notifications for deployments,Send automated Slack messages to the #deployments channel whenever a production deployment starts or finishes.,Feature
+Refactor database connection pool,The current connection pool logic is duplicated across three modules. Consolidate it into a single reusable utility.,Task
+Password reset email not delivered,Multiple users report never receiving the password reset email. SMTP logs show no outbound requests after form submission.,Bug
+Add CSV export for reports,Users need to download tabular reports as CSV files directly from the reporting dashboard.,Feature
+Session timeout after 2 minutes,Authenticated sessions are expiring after only 2 minutes of inactivity instead of the configured 30 minutes.,Bug
+Implement two-factor authentication,Add TOTP-based two-factor authentication as an optional security layer for user accounts.,Feature
+Profile page loads slowly,The user profile page takes over 8 seconds to load due to unoptimised SQL queries fetching related records.,Bug
+Migrate database to PostgreSQL 16,Upgrade the production database from PostgreSQL 14 to PostgreSQL 16 to leverage new performance improvements.,Task
+Drag-and-drop kanban board,Implement a drag-and-drop interface for the kanban board so users can move tickets between columns.,Feature
+API rate limiting returns 500 instead of 429,When a client exceeds the rate limit the server responds with a 500 Internal Server Error instead of the correct 429.,Bug
+Search results not paginated,The ticket search endpoint returns all results in a single response regardless of dataset size causing memory issues.,Bug
+Add webhook support for third-party integrations,Allow external services to subscribe to ticket lifecycle events via configurable webhook endpoints.,Feature
+Cleanup unused environment variables,Remove stale environment variables from .env.example and update the deployment runbook accordingly.,Task
+Attachment upload silently fails on large files,Uploading attachments larger than 10 MB appears to succeed but the file is never stored on the server.,Bug
+Implement audit log for admin actions,Record all create update and delete operations performed by admins in an immutable audit log table.,Feature
+Mobile layout breaks on small screens,On viewports narrower than 375px multiple UI components overflow beyond the screen boundary.,Bug
+Write integration tests for the billing module,The billing module lacks integration tests. Add end-to-end tests covering subscription creation renewal and cancellation.,Task
+Add multi-language support,Internationalise the application to support English Spanish French and German based on browser locale.,Feature
+Fix typos in error messages,Several error messages displayed to the user contain spelling mistakes. Review and correct all user-facing strings.,Task
+Notification preferences not persisted,Changes to notification preferences are shown in the UI immediately but are lost after a page refresh.,Bug
+Implement role-based access control,Introduce role-based access control with Admin Editor and Viewer roles to restrict access to sensitive features.,Feature
+Optimise image assets for faster load,Compress and serve all static image assets in WebP format to improve page load performance.,Task
+Duplicate tickets created on rapid form submission,Clicking the Submit button twice quickly creates two identical tickets due to missing debounce logic.,Bug
+Add time-tracking field to tickets,Allow users to log estimated and actual time spent on a ticket directly within the ticket detail view.,Feature
+Update third-party dependency versions,Several npm packages are multiple major versions behind. Audit and update dependencies to their latest stable releases.,Task
